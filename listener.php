@@ -18,10 +18,10 @@ function requestProcessor($request)
   {
     case "csgodata":
       return getcsgo($request['platform'],$request['gamertag']);
-    case "game2":
-      return getcsgo($request['platform'],$request['gamertag']);
-    case "game3":
-      return getcsgo($request['platform'],$request['gamertag']);
+    case "apexdata":
+      return getapex($request['platform'],$request['gamertag']);
+    case "splitgatedata":
+      return getsplitgate($request['platform'],$request['gamertag']);
     case "event_log":
       return getcsgo($request['platform'],$request['gamertag']);
   }
